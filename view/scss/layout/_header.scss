@@ -81,23 +81,3 @@
   
 }
 
-.menu-btn {
-  border: 0px;
-  background-color: #ffda09;
-  width: 60px;
-  height: 60px;
-  border-radius: 10px;
-  position: fixed;
-  right: 30px;
-  top: 520px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .ti-menu-2 {
-    display: flex;
-    color: #000;
-    transform: scale(2.5);
-    //font-size: 30px;
-  }
-}
