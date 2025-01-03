@@ -1,0 +1,13 @@
+@use "../utilities/variables";
+
+$container-width: variables.$container-width;
+
+.section {
+  padding: 2rem;
+  padding-top: 4rem;
+  margin: 0 0 auto auto;
+  width: 100%;
+  max-width: $container-width;
+  min-height: 100vh;
+  text-align: center;
+}
