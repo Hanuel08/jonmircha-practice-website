@@ -1,9 +1,60 @@
+@use "../utilities/variables";
 
+$primary-yellow : variables.$primary-yellow;
+
+.nav {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  
+  background-color: #000;
+  opacity: 0.7;
+
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.nav__list__li {
+  
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //background-color: #fff;
+}
+
+.nav__list__li__link {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 30px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.nav__list__li__link__p {
+  font-size: 30px;
+  color: $primary-yellow;
+  display: flex;
+}
 
 
 .menu-btn {
   border: 0px;
-  background-color: #ffda09;
+  background-color: $primary-yellow;
   width: 60px;
   height: 60px;
   border-radius: 10px;
@@ -13,6 +64,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   .ti-menu-2 {
     display: flex;

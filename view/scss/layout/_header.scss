@@ -1,12 +1,16 @@
+@use "../utilities/variables";
+
+$primary-yellow : variables.$primary-yellow;
+
 .content {
   height: 1000px;
 }
 
 
 .header {
-  background-color: sandybrown;
+  background-color: $primary-yellow;
   width: 100%;
-
+  height: 80px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -15,15 +19,19 @@
 
 .header__head {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  height: 70px;
+  height: 100%;
 }
 
 .header__head__title {
-  display: inline-block;
+  display: flex;
+  width: 400px;
+  height: 100%;
   padding: 0;
-  margin: 0
+  margin: 0;
+  color: #000;
+  text-align: center;
 }
 
 .header__head__menu {
