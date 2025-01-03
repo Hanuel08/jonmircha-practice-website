@@ -3,6 +3,29 @@ body {
   margin: 0;
 }
 
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "sans-serif";
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 a:link {
   color: #000;
 }
@@ -22,10 +45,13 @@ a:hover {
 .header {
   background-color: #ffda09;
   width: 100%;
-  height: 80px;
+  height: 70px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  position: sticky;
+  top: 0;
 }
 
 .header__head {
@@ -33,11 +59,13 @@ a:hover {
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 600px;
 }
 
 .header__head__title {
   display: flex;
-  width: 400px;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   padding: 0;
   margin: 0;
@@ -99,6 +127,8 @@ a:hover {
   position: fixed;
   background-color: #000;
   opacity: 0.7;
+  transition: all 0.5s ease-in-out;
+  z-index: 2000;
 }
 
 .nav__list {
@@ -133,23 +163,26 @@ a:hover {
 
 .nav__list__li__link__p {
   font-size: 30px;
-  color: #ffda09;
+  color: #f7df1e;
   display: flex;
 }
 
 .menu-btn {
   border: 0px;
-  background-color: #ffda09;
-  width: 60px;
-  height: 60px;
+  background-color: #f7df1e;
+  /* width: 50px;
+  height: 50px; */
   border-radius: 10px;
   position: fixed;
-  right: 30px;
-  top: 520px;
+  /* right: 30px;
+  top: 520px; */
+  bottom: 1vh;
+  right: 1vw;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  z-index: 8000;
 }
 .menu-btn .ti-menu-2 {
   display: flex;
@@ -157,8 +190,15 @@ a:hover {
   transform: scale(2.5);
 }
 
-/* .content {
-  background-color: sandybrown;
-  width: 100px;
-  height: 200px;
-} *//*# sourceMappingURL=style.css.map */
+.content__main__section {
+  padding: 2rem;
+  padding-top: 4rem;
+  margin: 0 auto;
+  /* margin-right: auto;
+  margin-left: auto; */
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+  text-align: center;
+  border: 1px solid red;
+}/*# sourceMappingURL=style.css.map */

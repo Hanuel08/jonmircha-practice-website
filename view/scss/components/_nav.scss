@@ -1,6 +1,6 @@
 @use "../utilities/variables";
 
-$primary-yellow : variables.$primary-yellow;
+$main-color: variables.$main-color;
 
 .nav {
   width: 100%;
@@ -9,6 +9,7 @@ $primary-yellow : variables.$primary-yellow;
   background-color: #000;
   opacity: 0.7;
   transition: all 0.5s ease-in-out;
+  z-index: 2000;
 }
 
 .nav__list {
@@ -45,24 +46,27 @@ $primary-yellow : variables.$primary-yellow;
 
 .nav__list__li__link__p {
   font-size: 30px;
-  color: $primary-yellow;
+  color: $main-color;
   display: flex;
 }
 
 
 .menu-btn {
   border: 0px;
-  background-color: $primary-yellow;
-  width: 60px;
-  height: 60px;
+  background-color: $main-color;
+  /* width: 50px;
+  height: 50px; */
   border-radius: 10px;
   position: fixed;
-  right: 30px;
-  top: 520px;
+  /* right: 30px;
+  top: 520px; */
+  bottom: 1vh;
+  right: 1vw;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  z-index: 8000;
 
   .ti-menu-2 {
     display: flex;

@@ -2,12 +2,17 @@
 
 $container-width: variables.$container-width;
 
-.section {
+.content__main__section {
   padding: 2rem;
   padding-top: 4rem;
-  margin: 0 0 auto auto;
+  //margin: 0 0 auto auto;
+  margin: 0 auto;
+  /* margin-right: auto;
+  margin-left: auto; */
   width: 100%;
   max-width: $container-width;
   min-height: 100vh;
   text-align: center;
+  //background-color: aquamarine;
+  border: 1px solid red;
 }
