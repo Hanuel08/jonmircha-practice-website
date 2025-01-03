@@ -3,10 +3,10 @@
 @use "base/icons";
 @use "base/reset";
 
-@use "layout/header";
-@use "layout/nav";
 
 // Components
+@use "components/header";
+@use "components/nav";
 @use "components/section";
 
 // Utilities
