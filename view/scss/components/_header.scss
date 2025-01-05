@@ -2,9 +2,6 @@
 
 $primary-yellow : variables.$primary-yellow;
 
-.content {
-  height: 1000px;
-}
 
 
 .header {
@@ -14,7 +11,6 @@ $primary-yellow : variables.$primary-yellow;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   position: sticky;
   top: 0;
 }
@@ -39,15 +35,6 @@ $primary-yellow : variables.$primary-yellow;
   margin: 0;
   color: #000;
   text-align: center;
-}
-
-.header__head__menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  margin-right: 20px;
 }
 
 /* .header__head__menu__btn {
