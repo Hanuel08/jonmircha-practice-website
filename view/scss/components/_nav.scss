@@ -11,8 +11,9 @@ $second-modal-color: variables.$second-modal-color;
   background-color: $second-modal-color;
   //transition: all 0.5s ease-in-out;
   z-index: 2000;
+  //Esto es lo que le da la animacion de arriba hacia abajo
   transform: translate(0, -100%);
-  transition: transform 0.3 ease;
+  transition: transform 0.3s ease;
 }
 
 .nav.is-active {
