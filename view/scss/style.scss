@@ -3,7 +3,11 @@
 @use "base/icons";
 @use "base/reset";
 
-@use "layout/header";
 
 // Components
-@use "components/menu";
+@use "components/header";
+@use "components/nav";
+@use "components/section";
+
+// Utilities
+@use "utilities/variables";

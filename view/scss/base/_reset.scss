@@ -1,5 +1,33 @@
+@use "../utilities/variables";
 
-a:link {
+$font-size: variables.$font-size;
+$main-font: variables.$main-font;
+
+html {
+  box-sizing: border-box;
+  font-size: $font-size;
+  font-family: $main-font;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* a:link {
   color: #000;
 }
 
@@ -9,5 +37,5 @@ a:visited {
 
 a:hover {
   color: #000;
-}
+} */
 
