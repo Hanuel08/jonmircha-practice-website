@@ -1,4 +1,4 @@
-import { navMenu } from "../components/navMenu.js";
+import { navMenu } from "../components/menu.js";
 import { clock } from "../components/clock.js";
 import { alarm } from "../components/alarm.js";
 
