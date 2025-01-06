@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   alarm({
-    sound: ".content__main__section__time__alarm__sound",
+    sound: "../public/assets/audio/huawei-bongo-ringtones.mp3",
     startBtn: ".btn-start-alarm",
     stopBtn: ".btn-stop-alarm",
     frequency: 1000
