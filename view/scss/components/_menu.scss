@@ -4,7 +4,7 @@ $main-color: variables.$main-color;
 $second-color: variables.$second-color;
 $second-modal-color: variables.$second-modal-color;
 
-.nav {
+.menu {
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -16,11 +16,11 @@ $second-modal-color: variables.$second-modal-color;
   transition: transform 0.3s ease;
 }
 
-.nav.is-active {git a
+.menu.is-active {
   transform: translate(0, 0);
 }
 
-.nav__list {
+.menu__list {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -31,7 +31,7 @@ $second-modal-color: variables.$second-modal-color;
   align-items: center;
 }
 
-.nav__list__li {
+.menu__list__li {
   
   width: 100%;
   height: 90px;
@@ -44,7 +44,7 @@ $second-modal-color: variables.$second-modal-color;
 
 
 
-.nav__list__li__link {
+.menu__list__li__link {
   text-decoration: none;
   /* display: flex;
   justify-content: center;
@@ -67,7 +67,7 @@ $second-modal-color: variables.$second-modal-color;
   }
 }
 
-/* .nav__list__li__link__p {
+/* .menu__list__li__link__p {
   font-size: 30px;
   color: $main-color;
   display: flex;

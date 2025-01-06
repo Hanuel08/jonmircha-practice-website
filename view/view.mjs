@@ -1,9 +1,12 @@
-import { navMenu } from "../components/menu.js";
+import { menu } from "../components/menu.js";
 import { clock } from "../components/clock.js";
 import { alarm } from "../components/alarm.js";
 
 document.addEventListener("DOMContentLoaded", () => { 
-  navMenu(".menu-btn", ".nav", ".nav__list__li *");
+  menu({
+    menu: ".menu",
+    menuBtn: ".menu-btn",
+    menuLinks: ".menu__list__li *"});
   
   clock({
     hour: ".content__main__section__time__clock__hour",
