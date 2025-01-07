@@ -25,19 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
     frequency: 1000,
   });
 
-  keyboardShortcuts({ 
-    player: ".content__main__section__game__player",  
-    velocity: {
-      x: 10,
-      y: 10,
-    },
-    position: {
-      top: 0,
-      bottom: 0,
-      right: 0,
-      left: 0
-    }
-
-  });
+  Shortcuts();
   
 });

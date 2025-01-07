@@ -1,4 +1,4 @@
-export const keyboardShortcuts = () => {
+export const shortcuts = () => {
   /* Existe keyip, keydown y keypress */
   document.addEventListener("keydown", e => {
     if (e.key == 'a' && e.altKey) {
