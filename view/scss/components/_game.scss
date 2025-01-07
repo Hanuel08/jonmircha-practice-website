@@ -1,19 +1,18 @@
+@use "../utililies/variables";
+$main-color: variables.$main-color;
+$second-color: variables.$second-color;
 
 .content__main__section__stage {
-  width: 1100px;
-  height: 500px;
-  background-color: #333;
+  display: flex;
+  min-height: 50vh;
+  background-color: $second-color;
   
 }
 
 .content__main__section__stage__ball {
-  width: 80px;
-  height: 80px;
-  background-color: #1bf;
+  margin: auto;
+  width: 4rem;
+  height: 4rem;
+  background-color: $main-color;
   border-radius: 50%;
-  position: relative;
-  /* top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0; */
 }
