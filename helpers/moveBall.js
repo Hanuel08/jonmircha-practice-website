@@ -7,6 +7,7 @@ export const moveBall = ({ direction, velocity, ball, stage }) => {
   const $stage = $(stage),
     $ball = $(ball);
 
+  /* El getBoundingClientRect obtiene un objeto con el top, left, etc de un elemento de html */
   let ballLimit = $ball.getBoundingClientRect(),
     stageLimit = $stage.getBoundingClientRect();
 
