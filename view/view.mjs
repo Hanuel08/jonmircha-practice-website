@@ -1,7 +1,9 @@
 import { menu } from "../components/menu.js";
 import { clock } from "../components/clock.js";
 import { alarm } from "../components/alarm.js";
-import { keyboardShortcuts } from "../components/keyboardShortcuts.js"
+import { shortcuts } from "../components/shortcuts.js";
+import { game } from "../components/game.js";
+
 
 document.addEventListener("DOMContentLoaded", () => { 
   menu({
@@ -25,6 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
     frequency: 1000,
   });
 
-  Shortcuts();
+  shortcuts();
+  game({
+    stage: ".content__main__section__stage",
+    ball: ".content__main__section__stage__ball",
+    velocity: 10,
+  });
   
 });
