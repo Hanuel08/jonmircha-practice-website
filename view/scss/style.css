@@ -325,6 +325,7 @@ a:hover {
   bottom: 1vh;
   right: 8vw;
   z-index: 9000;
+  display: none;
   justify-content: center;
   align-items: center;
 }

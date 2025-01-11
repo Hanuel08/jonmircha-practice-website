@@ -4,6 +4,7 @@ import { alarm } from "../components/alarm.js";
 import { shortcuts } from "../components/shortcuts.js";
 import { game } from "../components/game.js";
 import { countdown } from "../components/countdown.js";
+import { scrollBtn } from "../components/scrollBtn.js";
 
 
 document.addEventListener("DOMContentLoaded", () => { 
@@ -40,6 +41,10 @@ document.addEventListener("DOMContentLoaded", () => {
     output: ".content__main__section__countdown__time",
     targetDate: "Jan 10, 2025 23:25:00",
     message: "Felicidades primo!",
+  });
+
+  scrollBtn({
+    btn: ".scroll-btn"
   });
   
 });
