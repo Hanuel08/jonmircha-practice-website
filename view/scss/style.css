@@ -296,4 +296,20 @@ a:hover {
   height: 4rem;
   background-color: #f7df1e;
   border-radius: 50%;
+}
+
+.content__main__section__countdown {
+  width: 1000px;
+  height: 200px;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.content__main__section__countdown__time {
+  color: #fff;
+  font-size: 28px;
+  display: inline-block;
 }/*# sourceMappingURL=style.css.map */
