@@ -13,7 +13,7 @@ export const themeBtn = ({ btn }) => {
         $icon.classList.remove("ti-sun-high-filled");
         $icon.classList.add('ti-moon-filled');
       }
-      document.body.classList.toggle('dark-theme');
+      document.body.classList.toggle('dark');
     }
   })
 }

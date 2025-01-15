@@ -37,6 +37,31 @@ a:visited {
 a:hover {
   color: #000;
 } */
+body.dark {
+  background-color: #222;
+  color: #fff;
+}
+body.dark .content__main__section__title {
+  color: #f7df1e;
+}
+body.dark .clock-time {
+  border: 1px solid #ddd;
+}
+body.dark .content__main__section__time__control__btn {
+  border: 1px solid #ddd;
+}
+body.dark .content__main__section__time__control__btn[disabled] {
+  background-color: #666;
+  color: #ddd;
+  opacity: 0.4;
+}
+body.dark .content__main__section__stage {
+  background-color: #f7df1e;
+}
+body.dark .content__main__section__stage__ball {
+  background-color: #222;
+}
+
 .header {
   background-color: #ffda09;
   width: 100%;
@@ -248,6 +273,7 @@ a:hover {
   height: 150px;
   padding: 30px;
   border-radius: 10px;
+  border: 1px solid none;
 }
 
 .content__main__section__time__control {
@@ -280,6 +306,7 @@ a:hover {
 
 .content__main__section__time__control__btn[disabled] {
   background-color: #ddd;
+  border: 1px solid none;
   color: #666;
   opacity: 0.4;
 }

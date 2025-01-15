@@ -49,6 +49,7 @@
   height: 150px;
   padding: 30px;
   border-radius: 10px;
+  border: 1px solid none;
 }
 
 
@@ -85,6 +86,7 @@
 
 .content__main__section__time__control__btn[disabled] {
   background-color: #ddd;
+  border: 1px solid none;
   color: #666;
   opacity: 0.4;
 }

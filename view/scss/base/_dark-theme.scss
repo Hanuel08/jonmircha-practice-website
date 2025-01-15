@@ -1,0 +1,33 @@
+@use "../utilities/variables" as *;
+
+body.dark {
+  background-color: $second-color;
+  color: #fff;
+
+  .content__main__section__title {
+    color: $main-color;
+  }
+
+  .clock-time {
+    border: 1px solid #ddd;
+  }
+
+  .content__main__section__time__control__btn {
+    border: 1px solid #ddd;
+  }
+
+  .content__main__section__time__control__btn[disabled] {
+    background-color: #666;
+    color: #ddd;
+    opacity: 0.4;
+  }
+
+  .content__main__section__stage {
+    background-color: $main-color;
+  }
+
+  .content__main__section__stage__ball {
+    background-color: $second-color;
+  }
+
+}
