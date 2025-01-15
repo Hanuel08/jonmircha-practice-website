@@ -1,0 +1,29 @@
+@use "../utilities/variables" as *;
+
+
+
+.theme-btn {
+  width: 80px;
+  height: 80px;
+  background-color: $main-color;
+  color: $second-color;
+  border: none;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1vh;
+  left: 1vw;
+  z-index: 9000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .ti {
+    transform: scale(3);
+  }
+
+  &:hover {
+    background-color: $second-color;
+    color: $main-color;
+    cursor:pointer;
+  }
+}

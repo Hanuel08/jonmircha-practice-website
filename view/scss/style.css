@@ -336,4 +336,28 @@ a:hover {
   background-color: #222;
   color: #f7df1e;
   cursor: pointer;
+}
+
+.theme-btn {
+  width: 80px;
+  height: 80px;
+  background-color: #f7df1e;
+  color: #222;
+  border: none;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1vh;
+  left: 1vw;
+  z-index: 9000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.theme-btn .ti {
+  transform: scale(3);
+}
+.theme-btn:hover {
+  background-color: #222;
+  color: #f7df1e;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
