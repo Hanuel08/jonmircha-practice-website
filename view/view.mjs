@@ -5,6 +5,7 @@ import { shortcuts } from "../components/shortcuts.js";
 import { game } from "../components/game.js";
 import { countdown } from "../components/countdown.js";
 import { scrollBtn } from "../components/scrollBtn.js";
+import { themeBtn } from "../components/themeBtn.js";
 
 
 document.addEventListener("DOMContentLoaded", () => { 
@@ -44,7 +45,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   scrollBtn({
-    btn: ".scroll-btn"
+    btn: ".scroll-btn",
+  });
+
+  themeBtn({
+    btn: ".theme-btn",
   });
   
 });
