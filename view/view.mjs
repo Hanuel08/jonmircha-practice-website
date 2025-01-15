@@ -6,6 +6,7 @@ import { game } from "../components/game.js";
 import { countdown } from "../components/countdown.js";
 import { scrollBtn } from "../components/scrollBtn.js";
 import { themeBtn } from "../components/themeBtn.js";
+import { setTheme } from "../utils/setTheme.js";
 
 
 document.addEventListener("DOMContentLoaded", () => { 
@@ -49,6 +50,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   themeBtn({
+    btn: ".theme-btn",
+  });
+  
+  setTheme({
     btn: ".theme-btn",
   });
   

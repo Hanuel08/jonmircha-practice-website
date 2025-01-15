@@ -6,14 +6,20 @@ export const themeBtn = ({ btn }) => {
     if (e.target.matches(btn) || e.target.matches(`${btn} *`)) {
       let $icon = $(btn).firstElementChild;
 
-      if ($icon.classList.contains('ti-moon-filled')) {
-        $icon.classList.remove('ti-moon-filled');
-        $icon.classList.add("ti-sun-high-filled");
-      } else {
+      if (document.body.classList.contains('dark')) {
+        document.body.classList.remove('dark');
         $icon.classList.remove("ti-sun-high-filled");
-        $icon.classList.add('ti-moon-filled');
+        $icon.classList.add("ti-moon-filled");
+
+        localStorage.setItem('theme', 'light');
+        return;
       }
-      document.body.classList.toggle('dark');
+      document.body.classList.add("dark");
+      $icon.classList.remove("ti-moon-filled");
+      $icon.classList.add("ti-sun-high-filled");
+      
+      localStorage.setItem("theme", "dark");
+      return;
     }
   })
 }
