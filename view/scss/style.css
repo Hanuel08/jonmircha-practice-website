@@ -154,6 +154,10 @@ body.dark .content__main__section__stage__ball {
   padding: 0;
   justify-content: space-evenly;
   align-items: center;
+  overflow-y: scroll;
+}
+.menu__list::-webkit-scrollbar {
+  display: none;
 }
 
 .menu__list__li {
@@ -166,9 +170,6 @@ body.dark .content__main__section__stage__ball {
 
 .menu__list__li__link {
   text-decoration: none;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   display: block;
   width: inherit;
   cursor: pointer;
@@ -183,12 +184,6 @@ body.dark .content__main__section__stage__ball {
   font-weight: bold;
 }
 
-/* .menu__list__li__link__p {
-  font-size: 30px;
-  color: $main-color;
-  display: flex;
-}
- */
 .menu-btn {
   border: 0px;
   background-color: #f7df1e;
@@ -196,8 +191,6 @@ body.dark .content__main__section__stage__ball {
   height: 80px;
   border-radius: 50%;
   position: fixed;
-  /* right: 30px;
-  top: 520px; */
   bottom: 1vh;
   right: 1vw;
   display: flex;
