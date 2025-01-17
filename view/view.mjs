@@ -10,6 +10,7 @@ import { setTheme } from "../utils/setTheme.js";
 import { responsiveMedia } from "../components/responsiveMedia.js";
 import { responsiveTester } from "../components/responsiveTester.js";
 import { deviceDetection } from "../components/deviceDetection.js";
+import { internetDetection } from "../components/internetDetection.js";
 
 
 document.addEventListener("DOMContentLoaded", () => { 
@@ -81,6 +82,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   deviceDetection({
     content: ".content__main__section__device-detection",
+  });
+
+  internetDetection({
+    internet: ".internet",
+    notInternet: ".not-internet",
   });
   
 });

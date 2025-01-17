@@ -133,7 +133,7 @@ body.dark .content__main__section__stage__ball {
 
 .menu {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   position: fixed;
   background-color: rgba(34, 34, 34, 0.85);
   z-index: 2000;
@@ -449,18 +449,18 @@ body.dark .content__main__section__stage__ball {
   background-color: #b00;
 }
 
-.internet, no-internet {
-  display: flex;
+.internet, .not-internet {
+  display: none;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 90px;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 2000;
 }
-.internet__title, no-internet__title {
+.internet__title, .not-internet__title {
   font-size: 26px;
   color: #fff;
 }
