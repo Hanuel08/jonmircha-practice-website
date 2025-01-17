@@ -8,6 +8,7 @@ import { scrollBtn } from "../components/scrollBtn.js";
 import { themeBtn } from "../components/themeBtn.js";
 import { setTheme } from "../utils/setTheme.js";
 import { responsiveMedia } from "../components/responsiveMedia.js";
+import { responsiveTester } from "../components/responsiveTester.js";
 
 
 document.addEventListener("DOMContentLoaded", () => { 
@@ -71,5 +72,10 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileContent: `<a href="https://maps.app.goo.gl/KBP39DyDtSeKKnhC6" target="_blank" rel="noopener">Ver mapa</a>`,
     desktopContent: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7248282.074800875!2d-89.10144152166932!3d27.494147624773408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c1766591562abf%3A0xf72e13d35bc74ed0!2sFlorida%2C%20EE.%20UU.!5e0!3m2!1ses!2sdo!4v1736984201923!5m2!1ses!2sdo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`,
   });
+
+  responsiveTester({
+    form: ".content__main__section__form",
+    btnCancel: "cancel",
+  })
   
 });
