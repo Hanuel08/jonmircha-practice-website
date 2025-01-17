@@ -447,4 +447,28 @@ body.dark .content__main__section__stage__ball {
 }
 #cancel:hover {
   background-color: #b00;
+}
+
+.internet, no-internet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+.internet__title, no-internet__title {
+  font-size: 26px;
+  color: #fff;
+}
+
+.internet {
+  background-color: #0c0;
+}
+
+.not-internet {
+  background-color: #c00;
 }/*# sourceMappingURL=style.css.map */
