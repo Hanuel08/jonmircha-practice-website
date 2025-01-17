@@ -9,6 +9,7 @@ import { themeBtn } from "../components/themeBtn.js";
 import { setTheme } from "../utils/setTheme.js";
 import { responsiveMedia } from "../components/responsiveMedia.js";
 import { responsiveTester } from "../components/responsiveTester.js";
+import { deviceDetection } from "../components/deviceDetection.js";
 
 
 document.addEventListener("DOMContentLoaded", () => { 
@@ -77,5 +78,9 @@ document.addEventListener("DOMContentLoaded", () => {
     form: ".content__main__section__form",
     btnCancel: "cancel",
   })
+
+  deviceDetection({
+    content: ".content__main__section__device-detection",
+  });
   
 });
