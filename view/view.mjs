@@ -11,9 +11,10 @@ import { responsiveMedia } from "../components/responsiveMedia.js";
 import { responsiveTester } from "../components/responsiveTester.js";
 import { deviceDetection } from "../components/deviceDetection.js";
 import { internetDetection } from "../components/internetDetection.js";
+import { webcamDetector } from "../components/webcam-detector.js";
 
 
-document.addEventListener("DOMContentLoaded", () => { 
+document.addEventListener("DOMContentLoaded", async () => { 
   menu({
     menu: ".menu",
     menuBtn: ".menu-btn",
@@ -88,5 +89,12 @@ document.addEventListener("DOMContentLoaded", () => {
     internet: ".internet",
     notInternet: ".not-internet",
   });
+
+  webcamDetector({
+    video: ".content__main__section__media__video",
+    canvas: ".content__main__section__media__canvas",
+    photo: ".content__main__section__media__photo",
+    startBtn: ".content__main__section__btn",
+  })
   
 });
