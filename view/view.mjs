@@ -13,6 +13,8 @@ import { deviceDetection } from "../components/deviceDetection.js";
 import { internetDetection } from "../components/internetDetection.js";
 import { webcamDetector } from "../components/webcamDetector.js";
 import { geolocationDetector } from "../components/geolocationDetector.js";
+import { findFilter } from "../components/findFilter.js";
+import { createGalleryCards } from "../helpers/createGalleryCards.js";
 
 
 document.addEventListener("DOMContentLoaded", async () => { 
@@ -101,5 +103,16 @@ document.addEventListener("DOMContentLoaded", async () => {
   geolocationDetector({
     content: ".content__main__section__geolocation",
   })
+
+  findFilter({
+    input: ".content__main__section__gallery__filter-input",
+    content: ".content__main__section__gallery__content",
+    text: ".content__main__section__gallery__content__card__text__p",
+  });
+
+  await createGalleryCards({
+    template: ".content__main__section__gallery__content__card-template",
+    content: ".content__main__section__gallery__content",
+  });
   
 });
