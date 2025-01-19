@@ -8,14 +8,14 @@ export const webcamDetector = async ({ video, canvas, startBtn, photo }) => {
     $startBtn = $(startBtn),
     $photo = $(photo);
 
-  let width = 320,
+  let width = 420,
     height = 0,
     streaming = false;
   
 
   if ("mediaDevices" in navigator && "getUserMedia" in navigator.mediaDevices) {
     try {
-      let stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+      let stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
       console.log("stream", stream);
 
       $video.srcObject = stream;
@@ -41,6 +41,7 @@ export const webcamDetector = async ({ video, canvas, startBtn, photo }) => {
           $canvas.getContext('2d').drawImage($video, 0, 0, width, height);
           let imageSrc = $canvas.toDataURL('image/png');
           $photo.setAttribute("src", imageSrc);
+          $photo.style.display = "inline-block";
           /* console.log("imageSrc", imageSrc);
           console.log("img", $photo); */
         })

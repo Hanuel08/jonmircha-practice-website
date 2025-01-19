@@ -11,7 +11,7 @@ import { responsiveMedia } from "../components/responsiveMedia.js";
 import { responsiveTester } from "../components/responsiveTester.js";
 import { deviceDetection } from "../components/deviceDetection.js";
 import { internetDetection } from "../components/internetDetection.js";
-import { webcamDetector } from "../components/webcam-detector.js";
+import { webcamDetector } from "../components/webcamDetector.js";
 
 
 document.addEventListener("DOMContentLoaded", async () => { 
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     video: ".content__main__section__media__video",
     canvas: ".content__main__section__media__canvas",
     photo: ".content__main__section__media__photo",
-    startBtn: ".content__main__section__btn",
+    startBtn: ".content__main__section__photo-btn",
   })
   
 });

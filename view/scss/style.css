@@ -471,4 +471,37 @@ body.dark .content__main__section__stage__ball {
 
 .not-internet {
   background-color: #c00;
+}
+
+.content__main__section__media {
+  width: 900px;
+  margin: 0 auto;
+  min-height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content__main__section__media__canvas {
+  display: none;
+}
+
+.content__main__section__media__photo {
+  display: none;
+}
+
+.content__main__section__photo-btn {
+  outline: none;
+  border: none;
+  background-color: #1c6;
+  color: #fff;
+  width: 300px;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.content__main__section__photo-btn:hover {
+  background-color: #090;
 }/*# sourceMappingURL=style.css.map */
