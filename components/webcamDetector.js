@@ -1,8 +1,6 @@
 import { $ } from "../utils/querySelector.js";
 
 export const webcamDetector = async ({ video, canvas, startBtn, photo }) => {
-  //console.log("webcamDetector", navigator.mediaDevices);
-
   const $video = $(video),
     $canvas = $(canvas),
     $startBtn = $(startBtn),
@@ -16,7 +14,6 @@ export const webcamDetector = async ({ video, canvas, startBtn, photo }) => {
   if ("mediaDevices" in navigator && "getUserMedia" in navigator.mediaDevices) {
     try {
       let stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
-      console.log("stream", stream);
 
       $video.srcObject = stream;
       $video.play();
@@ -42,8 +39,6 @@ export const webcamDetector = async ({ video, canvas, startBtn, photo }) => {
           let imageSrc = $canvas.toDataURL('image/png');
           $photo.setAttribute("src", imageSrc);
           $photo.style.display = "inline-block";
-          /* console.log("imageSrc", imageSrc);
-          console.log("img", $photo); */
         })
 
       })
