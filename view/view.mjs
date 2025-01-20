@@ -15,6 +15,7 @@ import { webcamDetector } from "../components/webcamDetector.js";
 import { geolocationDetector } from "../components/geolocationDetector.js";
 import { findFilter } from "../components/findFilter.js";
 import { createGalleryCards } from "../helpers/createGalleryCards.js";
+import { digitalLottery } from "../components/digitalLottery.js";
 
 
 document.addEventListener("DOMContentLoaded", async () => { 
@@ -113,6 +114,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   await createGalleryCards({
     template: ".content__main__section__gallery__content__card-template",
     content: ".content__main__section__gallery__content",
+  });
+
+  digitalLottery({
+    raffleItems: ".content__main__section__lottery__raffles__item",
+    btnRaffle: ".content__main__section__lottery__btn-raffle",
   });
   
 });

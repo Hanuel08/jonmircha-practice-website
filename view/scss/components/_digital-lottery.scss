@@ -1,0 +1,43 @@
+.content__main__section__lottery {
+  width: 100%;
+}
+
+.content__main__section__lottery__raffles {
+  display: flex;
+  width: 100%;
+
+  //flex-direction: column;
+  //justify-content: center;
+  //align-items: center;
+}
+
+.content__main__section__lottery__raffles__item {
+  margin: 0;
+  padding: 0;
+  background-color: #444;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  width: 200px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content__main__section__lottery__btn-raffle {
+  outline: none;
+  border: none;
+  background-color: #d00;
+  color: #fff;
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #a00;
+  }  
+}
