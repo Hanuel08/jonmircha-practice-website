@@ -3,7 +3,7 @@ import { getGalleryCards } from "../utils/getGalleryCards.js";
 
 export const createGalleryCards = async ({ template, content }) => {
   try {
-    const cards = await getGalleryCards("http://localhost:52247");
+    const cards = await getGalleryCards("http://localhost:54243");
     const $template = $(template).content;
     const $fragment = document.createDocumentFragment();
     const select = (element) => $template.querySelector(element);
