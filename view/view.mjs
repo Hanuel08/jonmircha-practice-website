@@ -126,7 +126,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     sliderContainer: ".content__main__section__slider__container",
     btnLeft: ".slider-left-btn",
     btnRight: ".slider-right-btn",
-    
   });
   
 });
