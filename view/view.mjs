@@ -16,6 +16,7 @@ import { geolocationDetector } from "../components/geolocationDetector.js";
 import { findFilter } from "../components/findFilter.js";
 import { createGalleryCards } from "../helpers/createGalleryCards.js";
 import { digitalLottery } from "../components/digitalLottery.js";
+import { responsiveSlider } from "../components/responsiveSlider.js";
 
 
 document.addEventListener("DOMContentLoaded", async () => { 
@@ -119,6 +120,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   digitalLottery({
     raffleItems: ".content__main__section__lottery__raffles__item",
     btnRaffle: ".content__main__section__lottery__btn-raffle",
+  });
+
+  responsiveSlider({
+    sliderContainer: ".content__main__section__slider__container",
+    btnLeft: ".slider-left-btn",
+    btnRight: ".slider-right-btn",
+    
   });
   
 });
