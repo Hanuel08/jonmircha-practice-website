@@ -18,6 +18,7 @@ import { createGalleryCards } from "../helpers/createGalleryCards.js";
 import { digitalLottery } from "../components/digitalLottery.js";
 import { responsiveSlider } from "../components/responsiveSlider.js";
 import { scrollSpy } from "../components/scrollSpy.js";
+import { intelligentVideo } from "../components/intelligentVideo.js";
 
 
 document.addEventListener("DOMContentLoaded", async () => { 
@@ -132,8 +133,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   scrollSpy({
     menuLink: ".menu__list__li__link[data-scroll-spy]",
     section: ".content__main__section[data-scroll-spy]",
-    content: ".content__main",
-    //dataAttribute: "data-scroll-spy",
   });
+
+  intelligentVideo({
+    video: ".content__main__section__video",
+  })
   
 });
