@@ -17,6 +17,7 @@ import { findFilter } from "../components/findFilter.js";
 import { createGalleryCards } from "../helpers/createGalleryCards.js";
 import { digitalLottery } from "../components/digitalLottery.js";
 import { responsiveSlider } from "../components/responsiveSlider.js";
+import { scrollSpy } from "../components/scrollSpy.js";
 
 
 document.addEventListener("DOMContentLoaded", async () => { 
@@ -126,6 +127,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     sliderContainer: ".content__main__section__slider__container",
     btnLeft: ".slider-left-btn",
     btnRight: ".slider-right-btn",
+  });
+
+  scrollSpy({
+    menuLink: ".menu__list__li__link[data-scroll-spy]",
+    section: ".content__main__section[data-scroll-spy]",
+    content: ".content__main",
+    //dataAttribute: "data-scroll-spy",
   });
   
 });
