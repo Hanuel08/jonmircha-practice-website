@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
 
   intelligentVideo({
-    video: ".content__main__section__video",
+    videos: "video[data-smart-video]",
   })
   
 });
