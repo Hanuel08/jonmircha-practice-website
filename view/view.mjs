@@ -20,6 +20,7 @@ import { responsiveSlider } from "../components/responsiveSlider.js";
 import { scrollSpy } from "../components/scrollSpy.js";
 import { intelligentVideo } from "../components/intelligentVideo.js";
 import { formValidations } from "../components/formValidations.js";
+import { voiceReader } from "../components/voiceReader.js";
 
 
 document.addEventListener("DOMContentLoaded", async () => { 
@@ -138,12 +139,18 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   intelligentVideo({
     videos: "video[data-smart-video]",
-  })
+  });
 
   formValidations({
     form: ".content__main__section__form",
     loading: ".content__main__section__form__section__loaded",
     response: ".content__main__section__form__section__response",
-  })
+  });
+
+  voiceReader({
+    input: ".content__main__section__voice-reader__input",
+    select: ".content__main__section__voice-reader__select",
+    btn: ".content__main__section__voice-reader__btn",
+  });
   
 });

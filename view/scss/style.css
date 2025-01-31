@@ -838,4 +838,63 @@ body.dark .content__main__section__stage__ball {
 }
 .content__main__section__form__btn:hover {
   background-color: #16f;
+}
+
+.content__main__section__voice-reader {
+  width: 700px;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content__main__section__voice-reader__input {
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: sans-serif, arial;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  outline: none;
+  resize: none;
+}
+.content__main__section__voice-reader__input:focus, .content__main__section__voice-reader__input:hover {
+  border-color: #15f;
+}
+
+.content__main__section__voice-reader__select {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  outline: none;
+  color: #bbb;
+}
+.content__main__section__voice-reader__select::-webkit-scrollbar {
+  display: none;
+}
+
+.content__main__section__voice-reader__btn {
+  width: 100%;
+  height: 80px;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: #1bf;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+.content__main__section__voice-reader__btn:hover {
+  background-color: #15f;
+  color: #fff;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
