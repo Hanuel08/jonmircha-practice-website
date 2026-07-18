@@ -1,14 +1,12 @@
-@use "../utilities/variables" as *;
-
-
-
 .scroll-btn {
-  width: 80px;
-  height: 80px;
-  background-color: $main-color;
-  color: $second-color;
-  border: none;
-  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  color: var(--text-primary);
+  border-radius: var(--radius-full);
   position: fixed;
   bottom: 1vh;
   left: 8vw;
@@ -16,14 +14,19 @@
   display: none;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-md);
 
   .ti {
-    transform: scale(2.6);
+    transform: scale(1.8);
   }
 
   &:hover {
-    background-color: $second-color;
-    color: $main-color;
-    cursor:pointer;
+    background: var(--accent-gradient);
+    border-color: transparent;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-accent);
   }
 }

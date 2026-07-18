@@ -1,33 +1,26 @@
 @use "../utilities/variables" as *;
 
-body.dark {
-  background-color: $second-color;
-  color: #fff;
+// Dark is now the default theme.
+// Light theme is handled via body.light class in _variables.scss.
+// This file provides component-specific light-theme overrides if needed.
 
-  .content__main__section__title {
-    color: $main-color;
-  }
-
+body.light {
   .clock-time {
-    border: 1px solid #ddd;
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.1);
+    color: var(--text-primary);
   }
 
-  .content__main__section__time__control__btn {
-    border: 1px solid #ddd;
-  }
-
-  .content__main__section__time__control__btn[disabled] {
-    background-color: #666;
-    color: #ddd;
-    opacity: 0.4;
+  .content__main__section__time__title__separation {
+    text-shadow: none;
   }
 
   .content__main__section__stage {
-    background-color: $main-color;
+    background: rgba(0, 0, 0, 0.03);
+    border-color: rgba(0, 0, 0, 0.08);
   }
 
   .content__main__section__stage__ball {
-    background-color: $second-color;
+    box-shadow: 0 4px 16px rgba(124, 58, 237, 0.2);
   }
-
 }

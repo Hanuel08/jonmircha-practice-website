@@ -1,39 +1,61 @@
 .content__main__section__lottery {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
 .content__main__section__lottery__raffles {
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
 }
 
 .content__main__section__lottery__raffles__item {
   margin: 0;
-  padding: 0;
-  background-color: #444;
-  color: #fff;
-  font-size: 18px;
-  font-weight: bold;
-  width: 200px;
-  height: 20px;
-  display: flex;
+  padding: 0.5rem 1rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--glass-border);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-base);
+
+  &:hover {
+    background: var(--accent-gradient);
+    color: #fff;
+    border-color: transparent;
+  }
 }
 
 .content__main__section__lottery__btn-raffle {
   outline: none;
   border: none;
-  background-color: #d00;
+  background: var(--accent-gradient);
   color: #fff;
   width: 200px;
-  height: 60px;
-  border-radius: 10px;
-  font-size: 20px;
-  font-weight: bold;
+  height: 52px;
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
   cursor: pointer;
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-accent);
 
   &:hover {
-    background-color: #a00;
-  }  
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(124, 58, 237, 0.4);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
 }

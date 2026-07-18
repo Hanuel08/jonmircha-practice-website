@@ -1,13 +1,12 @@
-@use "../utilities/variables";
-
-$font-size: variables.$font-size;
-$main-font: variables.$main-font;
+@use "../utilities/variables" as *;
 
 html {
   box-sizing: border-box;
   font-size: $font-size;
-  font-family: $main-font;
+  font-family: var(--font-main);
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 *,
@@ -19,23 +18,40 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
 }
 
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
-
-/* a:link {
-  color: #000;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-a:visited {
-  color: #000;
+button {
+  font-family: inherit;
 }
 
-a:hover {
-  color: #000;
-} */
+::selection {
+  background-color: var(--accent-primary);
+  color: #fff;
+}
 
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-primary);
+  border-radius: var(--radius-full);
+}

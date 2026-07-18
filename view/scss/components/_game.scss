@@ -1,19 +1,20 @@
-@use "../utilities/variables";
-
-$main-color: variables.$main-color;
-$second-color: variables.$second-color;
-
 .content__main__section__stage {
   display: flex;
   min-height: 50vh;
-  background-color: $second-color;
-  
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
 }
 
 .content__main__section__stage__ball {
   margin: auto;
   width: 4rem;
   height: 4rem;
-  background-color: $main-color;
+  background: var(--accent-gradient);
   border-radius: 50%;
+  box-shadow: 0 0 30px rgba(124, 58, 237, 0.5);
 }

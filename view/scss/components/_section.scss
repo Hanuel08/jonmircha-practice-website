@@ -1,18 +1,21 @@
-@use "../utilities/variables";
-
-$container-width: variables.$container-width;
+@use "../utilities/variables" as *;
 
 .content__main__section {
   padding: 2rem;
   padding-top: 4rem;
-  //margin: 0 0 auto auto;
   margin: 0 auto;
-  /* margin-right: auto;
-  margin-left: auto; */
   width: 100%;
   max-width: $container-width;
   min-height: 100vh;
   text-align: center;
-  //background-color: aquamarine;
-  border: 1px solid red;
+}
+
+.content__main__section__title {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
